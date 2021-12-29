@@ -1,38 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gabriel Dubois</title>
-    <!-- fonts -->
-    <link rel="stylesheet" href="./fontawesome-free-5.12.1-web/css/all.min.css">
-    <!-- Style css -->
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-    <h1>portfolio</h1>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-5.12.1-web/css/all.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
     <!-- navbar -->
     <nav class="nav" id="nav">
-        
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <img src="./visual/logo.svg" class="nav-logo" alt="nav logo" />
+          <button class="nav-btn" id="nav-btn">
+            <i class="fa fa-car-side"></i>
+          </button>
+        </div>
+        <!-- nav-links -->
+        <ul class="nav-links">
+          <li>
+            <a href="index.html">Start</a>
+          </li>
+          <li>
+            <a href="about.html">about</a>
+          </li>
+          <li>
+            <a href="projects.html">projects</a>
+          </li>
+          <li>
+            <a href="contact.html">contact</a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <!-- end of navbar -->
     <!-- sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div>
+        <button class="close-btn" id="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <!-- nav-links -->
+        <ul class="sidebar-links">
+          <li>
+            <a href="index.html">Start</a>
+          </li>
+          <li>
+            <a href="about.html">about</a>
+          </li>
+          <li>
+            <a href="projects.html">projects</a>
+          </li>
+          <li>
+            <a href="contact.html">contact</a>
+          </li>
+        </ul>
+        <!-- social icons -->
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.linkedin.com/in/gabriel-dubois-6042b5221/" class="social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Adissuu" class="social-icon">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
     <!-- end of sidebar -->
     <!-- header -->
-
+    <header class="hero">
+      <div class="section-center hero-center">
+        <article class="hero-info">
+          <div class="underline"></div>
+          <h1>hello, i'm gabriel.</h1>
+          <h4>software engineering student</h4>
+          <a href="contact.html" class="btn hero-btn">Let me in (please)</a>
+          <!-- social icons -->
+          <ul class="social-icons hero-icons">
+            <li>
+                <a href="https://www.linkedin.com/in/gabriel-dubois-6042b5221/" target="_blank" class="social-icon">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/Adissuu" target="_blank" class="social-icon">
+                  <i class="fab fa-github"></i>
+                </a>
+              </li>
+          </ul>
+        </article>
+        <article class="hero-img">
+          <a href="about.html"><img src="./visual/gabriel-dubois.png" class="hero-photo img-btn" alt="gabriel" /></a>
+        </article>
+      </div>
+    </header>
     <!-- end of header -->
     <!-- about -->
-
+    <section class="section about">
+      <div class="section-center about-center">
+        <!-- about img -->
+        <article class="about-img">
+          <a href="https://www.concordia.ca/academics/undergraduate/software-engineering.html" target="_blank"><img src="./visual/about-img.png" class="hero-photo img-btn" alt="gabriel" /></a>
+        </article>
+        <!-- about info -->
+        <article class="about-info">
+          <!-- section title -->
+          <div class="section-title about-title">
+            <h2>My pleasure</h2>
+            <div class="underline"></div>
+          </div>
+          <!-- end section title -->
+          <p>to meet you, of course. I'm native from the greater Montreal area, and I've been interested in new technologies since my youngest age. Currently in the middle of my first year at <strong>Concordia University</strong> as a <strong>Software Engineering student,</strong> I am eager to enlarge my point of view with experience from diverse fields. Who knows? There might be a professional <em>"match" </em> between your company and I!</p>
+          <a href="about.html" class="btn">More details</a>
+        </article>
+      </div>
+    </section>
     <!-- end of about -->
-    <!-- skills -->
-
-    <!-- end of skills -->
+    <!-- courses -->
+<section class="section bg-grey">
+  <!-- section title -->
+  <div class="section-title">
+    <h2>courses</h2>
+    <div class="underline"></div>
+  </div>
+  <!-- end of section title -->
+  <div class="courses-center section-center">
+    <!-- course -->
+    <article class="course">
+      <i class="fab fa-java course-icon"></i>
+      <h4>COMP-248</h4>
+      <div class="underline"></div>
+      <p>An introductory course for Object-oriented Programming, in java. In this course I learned the basics of this type of programming, as well as how to use and personnalize an IDE.</p>
+    </article>
+    <!-- end of course -->
+    <!-- course -->
+    <article class="course">
+      <i class="fa fa-lightbulb course-icon"></i>
+      <h4>COMP-232</h4>
+      <div class="underline"></div>
+      <p>Mathematics for Computer Science, Discrete mathematics. The knowledfe of this course is pretty uselful in terms of computer logic and algorithms.</p>
+    </article>
+    <!-- end of course -->
+  </div> 
+</section>
+    <!-- end of courses -->
     <!-- projects -->
-
+<section class="section projects">
+  <!-- section title -->
+  <div class="section-title project-title">
+    <h2>Projects</h2>
+    <div class="underline"></div>
+    <p>Only getting started !</p>
+  </div>
+</section>
     <!-- end of projects -->
     <!-- contact -->
 
     <!-- end of contact -->
 </body>
+<script src="./js/app.js"></script>
 </html>
