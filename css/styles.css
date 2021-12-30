@@ -189,6 +189,7 @@ Navbar
   .nav {
     height: 4rem;
     display: grid;
+    padding: 1rem;
     align-items: center;
     transition: var(--transition);
     border-bottom: 0.25rem solid var(--clr-primary-5);
