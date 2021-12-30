@@ -175,8 +175,8 @@ p {
   margin-bottom: 4rem;
   text-align: center;
 }
-.bg-grey{
-  background: var(--clr-grey-10);
+.bg{
+  background: var(--clr-primary-10);
 }
 /*
 =============== 
@@ -330,8 +330,18 @@ margin-left: 0;;
   display: none;
 }
 .hero{
-  background: var(--clr-primary-10);
   border-bottom: 0.25rem dashed var(--clr-primary-5);
+}
+.hero::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--clr-primary-10);
+  opacity: 0.6;
+  z-index: -1;
 }
 .hero-center{
   min-height: calc(100vh - 5rem);
@@ -339,7 +349,7 @@ margin-left: 0;;
   place-items: center;
 }
 .hero-info h4{
-  color: var(--clr-grey-5);
+  color: var(--clr-primary-1);
 }
 .hero-icons{
   justify-items: end;
@@ -487,7 +497,7 @@ Course
 }
 @media screen and (min-width:992px) {
   /* .courses-center{ */
-  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* grid-template-columns: repeat(3, 1fr); */
   /* } */
 }
 /*
@@ -495,13 +505,134 @@ Course
 Projects
 ===============
 */
-
+.projects{
+  background: var(--clr-primary-1);
+}
+.projects p{
+  color: var(--clr-white);
+}
+.project-title{
+  color: var(--clr-primary-10);
+}
+.projects-text{
+  width: 85vw;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+.project{
+  position: relative;
+  background: var(--clr-primary-5);
+  border-radius: var(--radius);
+  margin-bottom: 2rem;
+}
+.project-info{
+  text-align: center;
+  color: var(--clr-white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: var(--transition);
+  opacity: 0;
+}
+.project-info p{
+  text-transform: capitalize;
+  color: var(--clr-white);
+}
+.project:hover .project-info{
+  opacity: 1;
+}
+.project-img{
+  transition: var(--transition);
+  height: 15rem;
+  border-radius: var(--radius);
+  object-fit: cover;
+}
+.project:hover .project-img{
+  opacity: 0.1;
+}
+.project::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: var(--transition);
+  border: 00.25rem solid var(--clr-white);
+  opacity:0;
+}
+.project:hover::after{
+  opacity: 1;
+  transform: scale(0.8);
+}
+@media screen and (min-width:676px) {
+  .projects-center{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+@media screen and (min-width:992px) {
+  .projects-center{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width:1170px) {
+  .projects-center{
+    grid-template-rows: 300px 300px;
+    grid-template-areas:
+    "a b b"
+    "a o o" ;
+  }
+  .project-img{
+    height: 100%;
+  }
+  .project{
+    height: 100%;
+  }
+  .project-1{
+    grid-area: a;
+  }
+  .project-2{
+    grid-area: b;
+  }
+  .project-3{
+    grid-area: o;
+  }
+}
 /*
 =============== 
-Connect
+Contact
 ===============
 */
-
+.contact{
+  min-height: 40vh;
+  position: relative;
+  padding: 10rem 0 5rem 0;
+  margin: 5rem 0;
+}
+.video-container{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+.contact::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--clr-primary-5);
+  opacity: 0.4;
+  z-index: -1;
+}
 /*
 =============== 
 Skills

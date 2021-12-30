@@ -18,7 +18,7 @@
       <div class="nav-center">
         <!-- nav header -->
         <div class="nav-header">
-          <img src="./visual/logo.svg" class="nav-logo" alt="nav logo" />
+          <img src="./visual/images/logo.svg" class="nav-logo" alt="nav logo" />
           <button class="nav-btn" id="nav-btn">
             <i class="fa fa-caret-right"></i>
           </button>
@@ -80,6 +80,15 @@
     <!-- end of sidebar -->
     <!-- header -->
     <header class="hero">
+      <video 
+      autoplay 
+      muted 
+      loop 
+      class="video-container"
+      poster="./visual/videos/background-poster.jpg"
+      >
+        <source src="./visual/videos/background.mp4" type="video/mp4"/> Embedded videos are not supported by your browser.
+    </video>
       <div class="section-center hero-center">
         <article class="hero-info">
           <div class="underline"></div>
@@ -101,7 +110,7 @@
           </ul>
         </article>
         <article class="hero-img">
-          <a href="about.html"><img src="./visual/gabriel-dubois.png" class="hero-photo img-btn" alt="gabriel" /></a>
+          <a href="about.html"><img src="./visual/images/gabriel-dubois.png" class="hero-photo img-btn" alt="gabriel" /></a>
         </article>
       </div>
     </header>
@@ -111,7 +120,7 @@
       <div class="section-center about-center">
         <!-- about img -->
         <article class="about-img">
-          <a href="https://www.concordia.ca/academics/undergraduate/software-engineering.html" target="_blank"><img src="./visual/about-img.png" class="hero-photo img-btn" alt="gabriel" /></a>
+          <a href="https://www.concordia.ca/academics/undergraduate/software-engineering.html" target="_blank"><img src="./visual/images/about-img.png" class="hero-photo img-btn" alt="gabriel" /></a>
         </article>
         <!-- about info -->
         <article class="about-info">
@@ -121,14 +130,14 @@
             <div class="underline"></div>
           </div>
           <!-- end section title -->
-          <p>to meet you, of course. I'm native from the greater Montreal area, and I've been interested in new technologies since my youngest age. Currently in the middle of my first year at <strong>Concordia University</strong> as a <strong>Software Engineering student,</strong> I am eager to enlarge my point of view with experience from diverse fields. Who knows? There might be a professional <em>"match" </em> between your company and I!</p>
+          <p>to meet you, of course. I'm native from the greater Montreal area, and I've been interested in new technologies since my youngest age. Currently in the middle of my first year at <strong>Concordia University</strong> as a <strong>Software Engineering student,</strong> I am eager to enlarge my point of view with experience from diverse fields. Who knows? There might be a professional <em>"match" </em> between your company and I !</p>
           <a href="about.html" class="btn">More details</a>
         </article>
       </div>
     </section>
     <!-- end of about -->
     <!-- courses -->
-<section class="section bg-grey">
+<section class="section bg">
   <!-- section title -->
   <div class="section-title">
     <h2>courses</h2>
@@ -163,10 +172,65 @@
     <div class="underline"></div>
     <p>Only getting started !</p>
   </div>
+  <!-- end title -->
+  <div class="section-center projects-center">
+    <!-- a project -->
+    <a href="projects.html" class="project-1">
+      <article class="project">
+        <img src="./visual/images/project-portfolio.jpg" class="project-img" alt="portfolio img"/>
+        <div class="project-info">
+          <h4>Portfolio</h4>
+          <p>You are currently viewing it.</p>
+        </div>
+      </article>
+    </a>
+    <!-- end of a project -->
+    <!-- a project -->
+    <a href="https://www.youtube.com/watch?v=lpiB2wMc49g" target="_blank" class="project-2">
+      <article class="project">
+        <img src="./visual/images/project-surprise.jpg" class="project-img" alt="portfolio img"/>
+        <div class="project-info">
+          <h4>Click for a surprise!</h4>
+          <p>My biggest project yet</p>
+        </div>
+      </article>
+    </a>
+    <!-- end of a project -->
+    <!-- a project -->
+    <a href="https://i.redd.it/4fqshqpp5t661.jpg" target="_blank" class="project-3">
+      <article class="project">
+        <img src="./visual/images/project-dontclick.png" class="project-img" alt="portfolio img"/>
+        <div class="project-info">
+          <h4>For real.</h4>
+          <p>DO NOT</p>
+        </div>
+      </article>
+    </a>
+    <!-- end of a project -->
+  </div>
 </section>
     <!-- end of projects -->
     <!-- contact -->
-
+    <section class="contact">
+      <video 
+        autoplay 
+        muted 
+        loop 
+        class="video-container"
+        poster="./visual/videos/contact-poster.jpg"
+        >
+          <source src="./visual/videos/contact.mp4" type="video/mp4"/> Embedded videos are not supported by your browser.
+      </video>
+      <div class="video-banner">
+        <!-- section title -->
+        <div class="section-title">
+          <h2>Let's connect</h2>
+          <div class="underline"></div>
+        </div>
+        <!-- end section title -->
+        <p class="video-text"></p>
+      </div>
+    </section>
     <!-- end of contact -->
 </body>
 <script src="./js/app.js"></script>
