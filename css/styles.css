@@ -178,6 +178,60 @@ p {
 .bg{
   background: var(--clr-primary-10);
 }
+
+/*
+=============== 
+Index
+===============
+*/
+.index{
+  padding: 5rem;
+}
+.index h1{
+  font-size: 1rem;
+  color: var(--clr-primary-10);
+  text-align: center;
+}
+.index .underline{
+  width: 30rem;
+  margin-bottom: 2rem
+}
+.index-center{
+  display: grid;
+  gap: 3rem;
+  justify-content: center;
+}
+.index-button{
+  text-transform: capitalize;
+  display: flex;
+  font-size: 4rem;
+  height: 350px;
+  width: 350px;
+  color: var(--clr-primary-10);
+  border: 0.25rem solid var(--clr-primary-10);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1rem 1rem 3rem var(--clr-primary-10) inset;
+  transition: all 0.4s ease;
+}
+.index-button:hover{
+  color:var(--clr-primary-10);
+  border: 0.25rem solid var(--clr-primary-1);
+  box-shadow: 0rem 0rem 0rem var(--clr-primary-10) inset;
+}
+@media screen and (min-width:992px) {
+  .index-center{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .lg1{
+    place-self: center;
+  }
+  .lg2{
+    place-self: center;
+  }
+}
+
 /*
 =============== 
 Navbar
@@ -222,7 +276,7 @@ Navbar
       }
       .nav-links{
           display: grid;
-          grid-template-columns: repeat(4, 1fr);
+          grid-template-columns: repeat(5, 1fr);
           justify-items: center;
           column-gap: 2rem;
           justify-self: end;
