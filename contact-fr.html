@@ -1,16 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Gabriel Dubois</title>
-    <!-- fonts -->
-    <link rel="stylesheet" href="./fontawesome-free-5.12.1-web/css/all.min.css">
-    <!-- Style css -->
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-    <a href="Home-en.html" class="btn">come on back home fella</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gabriel Dubois / Contact</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-5.12.1-web/css/all.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="nav" id="nav">
+        <div class="nav-center">
+          <!-- nav header -->
+          <div class="nav-header">
+            <img src="./visual/images/logo.svg" class="nav-logo" alt="nav logo" />
+            <button class="nav-btn" id="nav-btn">
+              <i class="fa fa-angle-double-right"></i>
+            </button>
+          </div>
+          <!-- nav-links -->
+          <ul class="nav-links">
+            <li>
+              <a href="home-fr.html">Accueil</a>
+            </li>
+            <li>
+              <a href="about-fr.html">À propos</a>
+            </li>
+            <li>
+              <a href="projects-fr.html">projets</a>
+            </li>
+            <li>
+              <a href="contact-fr.html">contact</a>
+            </li>
+            <li>
+              <a href="contact-en.html">en</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- end of navbar -->
+      <!-- sidebar -->
+      <aside class="sidebar" id="sidebar">
+        <div>
+          <button class="close-btn" id="close-btn">
+            <i class="fas fa-times"></i>
+          </button>
+          <!-- nav-links -->
+          <ul class="sidebar-links">
+            <li>
+              <a href="home-fr.html">accueil</a>
+            </li>
+            <li>
+              <a href="about-fr.html">à propos</a>
+            </li>
+            <li>
+              <a href="projects-fr.html">projets</a>
+            </li>
+            <li>
+              <a href="contact-fr.html">contact</a>
+            </li>
+            <li>
+              <a href="contact-en.html">english</a>
+            </li>
+          </ul>
+          <!-- social icons -->
+          <ul class="social-icons">
+            <li>
+              <a href="https://www.linkedin.com/in/gabriel-dubois-6042b5221/" class="social-icon" target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Adissuu" class="social-icon" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <!-- end of sidebar -->
+    <!-- contact -->
+    <section class="section single-page">
+          <!-- section title -->
+          <div class="section-title">
+            <h1>Me joindre</h1>
+            <div class="underline"></div>
+          </div>
+          <!-- end section title -->
+          <div class="section-center page-info">
+           <p>Si vous désirez me contacter, vous avez la possibilité de soit m'envoyer un courriel à <a href="mailto:gabrieldubois.eng@gmail.com">gabrieldubois.eng@gmail.com</a>, soit de m'envoyer un message via mon <a href="https://www.linkedin.com/in/gabriel-dubois-6042b5221/" target="_blank" >Linkedin.</a> </p>
+          </div>
+    </section>
+    <!-- end of contact -->
+<!-- footer -->
+<footer class="footer">
+  <ul class="social-icons">
+    <li>
+      <a href="https://www.linkedin.com/in/gabriel-dubois-6042b5221/" target="_blank" class="social-icon">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/Adissuu" target="_blank" class="social-icon">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  </ul>
+  <p>&copy; <span id="date"></span> gabriel dubois. tous droits réservés</p>
+  <!-- end of footer -->
+</footer>
 </body>
+<script src="./js/app.js"></script>
 </html>
