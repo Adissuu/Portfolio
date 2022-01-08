@@ -535,14 +535,15 @@ Course
   height: 0.1rem;
   transition: var(--transition);
 }
-.course p{
+.course p, .course h4{
   transition: var(--transition);
+  color: var(--clr-primary-1);
 }
 .course:hover{
   background: var(--clr-primary-5);
   color: var(--clr-white);
 }
-.course:hover p{
+.course:hover p, .course:hover h4{
   color: var(--clr-white);
 }
 .course:hover .underline{
