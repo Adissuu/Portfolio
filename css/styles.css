@@ -198,6 +198,7 @@ Index
   margin-bottom: 2rem
 }
 .index-center{
+  padding-right: 2rem;
   display: grid;
   gap: 3rem;
   justify-content: center;
