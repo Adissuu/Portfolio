@@ -207,8 +207,8 @@ Index
   text-transform: capitalize;
   display: flex;
   font-size: 4rem;
-  height: 350px;
-  width: 350px;
+  height: 300px;
+  width: 300px;
   color: var(--clr-primary-10);
   border: 0.25rem solid var(--clr-primary-10);
   border-radius: 50%;
@@ -223,6 +223,10 @@ Index
   box-shadow: 0rem 0rem 0rem var(--clr-primary-10) inset;
 }
 @media screen and (min-width:992px) {
+  .index-button{
+    height: 350px;
+    width: 350px;
+  } 
   .index-center{
     grid-template-columns: repeat(2, 1fr);
   }
