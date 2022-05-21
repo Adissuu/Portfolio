@@ -2,25 +2,347 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gabriel Dubois</title>
-    <!-- font-awesome -->
-    <link rel="stylesheet" href="./fontawesome-free-5.12.1-web/css/all.min.css" />
-    <!-- css -->
-    <link rel="stylesheet" href="./css/styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gabriel Dubois</title>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="./fontawesome-free-6.1.1-web/css/all.min.css" />
+  <!-- css -->
+  <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
-<body style="background-color: #001014;">
-    <section class="index">
-        <h1>Choose your language. / Choisissez votre langue.</h1>
+<body>
+  <!-- navbar -->
+  <nav class="nav" id="nav">
+    <div class="nav-center">
+      <!-- nav header -->
+      <div class="nav-header">
+        <img src="./visual/images/logo.svg" class="nav-logo" alt="nav logo" />
+        <button class="nav-btn" id="nav-btn">
+          <i class="fa fa-angle-double-right"></i>
+        </button>
+      </div>
+      <!-- nav-links -->
+      <ul class="nav-links">
+        <li>
+          <a href="home-en.html">home</a>
+        </li>
+        <li>
+          <a href="about-en.html">about</a>
+        </li>
+        <li>
+          <a href="projects-en.html">projects</a>
+        </li>
+        <li>
+          <a href="contact-en.html">contact</a>
+        </li>
+        <li>
+          <a href="home-fr.html">fr</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- end of navbar -->
+  <!-- sidebar -->
+  <aside class="sidebar" id="sidebar">
+    <div>
+      <button class="close-btn" id="close-btn">
+        <i class="fas fa-times"></i>
+      </button>
+      <!-- nav-links -->
+      <ul class="sidebar-links">
+        <li>
+          <a href="home-en.html">home</a>
+        </li>
+        <li>
+          <a href="about-en.html">about</a>
+        </li>
+        <li>
+          <a href="projects-en.html">projects</a>
+        </li>
+        <li>
+          <a href="contact-en.html">contact</a>
+        </li>
+        <li>
+          <a href="home-fr.html">français</a>
+        </li>
+      </ul>
+      <!-- social icons -->
+      <ul class="social-icons">
+        <li>
+          <a href="https://www.linkedin.com/in/gabriel-dubois-6042b5221/" class="social-icon" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Adissuu" class="social-icon" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+  <!-- end of sidebar -->
+  <!-- header -->
+  <header class="hero spacer layer1">
+    <video autoplay muted loop class="video-container" poster="./visual/videos/background-poster.jpg">
+      <source src="./visual/videos/background.mp4" type="video/mp4" /> Embedded videos are not supported by your
+      browser.
+    </video>
+    <div class="section-center hero-center">
+      <article class="hero-info">
         <div class="underline"></div>
-
-        <body>
-            <div class="section-center index-center">
-                <a href="./home-en.html" class="fa index-button lg1">english</a>
-                <a href="./home-fr.html" class="fa index-button lg2">français</a>
-        </body>
+        <h1>hello, i'm gabriel.</h1>
+        <h4>software engineering student</h4>
+        <a href="contact-en.html" class="btn hero-btn">Let me in (please)</a>
+        <br>
+        <br>
+        <a href="Resume_GabrielDubois_ENG.pdf" class="btn" target="_blank">Resume <i class="fas fa-file"></i></a>
+        <!-- social icons -->
+        <ul class="social-icons hero-icons">
+          <li>
+            <a href="https://www.linkedin.com/in/gabriel-dubois-6042b5221/" target="_blank" class="social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/Adissuu" target="_blank" class="social-icon">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      </article>
+      <article class="hero-img">
+        <a href="about-en.html"><img src="./visual/images/gabriel-dubois.jfif" class="hero-photo img-btn"
+            alt="gabriel" /></a>
+      </article>
+    </div>
+  </header>
+  <!-- end of header -->
+  <!-- about -->
+  <section class="section about">
+    <div class="section-center about-center">
+      <!-- about img -->
+      <article class="about-img">
+        <a href="https://www.concordia.ca/academics/undergraduate/software-engineering.html" target="_blank"><img
+            src="./visual/images/about-img.png" class="hero-photo img-btn" alt="concordia" /></a>
+      </article>
+      <!-- about info -->
+      <article class="about-info">
+        <!-- section title -->
+        <div class="section-title about-title">
+          <h2>My pleasure</h2>
+          <div class="underline"></div>
+        </div>
+        <!-- end section title -->
+        <p>to meet you, of course. I'm native from the greater Montreal area, and I've been interested in new
+          technologies since my youngest age. Currently in the middle of my first year at <strong>Concordia
+            University</strong> as a <strong>Software Engineering student,</strong> I am eager to enlarge my point of
+          view with experience from diverse fields. Who knows? There might be a professional <em>"match" </em> between
+          your company and I !</p>
+        <a href="about-en.html" class="btn">More details</a>
+      </article>
+    </div>
+  </section>
+  <!-- end of about -->
+  <div class="spacer layer2"></div>
+  <!-- courses -->
+  <section class="section bg">
+    <!-- section title -->
+    <div class="section-title">
+      <h2>courses</h2>
+      <div class="underline"></div>
+    </div>
+    <!-- end of section title -->
+    <div class="courses-center section-center">
+      <!-- course -->
+      <article class="course">
+        <i class="fa fa-lightbulb course-icon"></i>
+        <h4>COMP-232</h4>
+        <div class="underline"></div>
+        <p>Mathematics for Computer Science, Discrete mathematics. The knowledge of this course is pretty uselful in
+          terms of computer logic and algorithms.</p>
+      </article>
+      <!-- end of course -->
+      <!-- course -->
+      <article class="course">
+        <i class="fab fa-java course-icon"></i>
+        <h4>COMP-249</h4>
+        <div class="underline"></div>
+        <p>The second level of the introductory course for Object-Oriented Programming, in java. In this course I
+          learned about file management, nodes, and class hierarchy.</p>
+      </article>
+      <!-- end of course -->
+      <!-- course -->
+      <article class="course">
+        <i class="fab fa-html5 course-icon"></i><i class="fab fa-css3 course-icon"></i><i
+          class="fab fa-js course-icon"></i><i class="fab fa-php course-icon"></i>
+        <h4>SOEN-287</h4>
+        <div class="underline"></div>
+        <p>Introduction to web development, in this course, we learned the fundamentals HTML, CSS, JavaScript and PHP.
+        </p>
+      </article>
+      <!-- end of course -->
+      <!-- course -->
+      <article class="course">
+        <i class="fa-solid fa-microchip course-icon"></i>
+        <h4>SOEN-228</h4>
+        <div class="underline"></div>
+        <p>System Hardware. The main purpose of this course was to learn how a computer is build, and the main project
+          was to build one of size of 4 bits.</p>
+      </article>
+      <!-- end of course -->
+      <!-- course -->
+      <article class="course">
+        <i class="fab fa-python course-icon"></i>
+        <h4>COMP-348</h4>
+        <div class="underline"></div>
+        <p>Principles of Programming Languages. The objective of this course is to enable the understanding of different
+          languages and programming paradigms.</p>
+      </article>
+      <!-- end of course -->
+      <!-- course -->
+      <article class="course">
+        <i class="fa-solid fa-code-branch course-icon"></i>
+        <h4>COMP-352</h4>
+        <div class="underline"></div>
+        <p>Data Structures. The creation of algorithmic solutions to problems is the main purpose of the course.</p>
+      </article>
+      <!-- end of course -->
+    </div>
+  </section>
+  <!-- end of courses -->
+  <!-- projects -->
+  <section class="section projects">
+    <div class="spacer layer3"></div>
+    <!-- section title -->
+    <div class="section-title project-title">
+      <h2>Projects</h2>
+      <div class="underline"></div>
+      <p>Only getting started !</p>
+    </div>
+    <!-- end title -->
+    <div class="section-center projects-center">
+      <!-- a project -->
+      <a href="https://devpost.com/software/gambling-discord-bot?ref_content=my-projects-tab&ref_feature=my_projects"
+        class="project-1">
+        <article class="project">
+          <img src="./visual/images/bot.jpg" class="project-img" alt="portfolio img" />
+          <div class="project-info">
+            <h4>Discord Bot</h4>
+            <p>Coded in python with Discord.py.</p>
+          </div>
+        </article>
+      </a>
+      <!-- end of a project -->
+      <!-- a project -->
+      <a href="https://fifty-ten.herokuapp.com/" target="_blank" class="project-2">
+        <article class="project">
+          <img src="./visual/images/Fruits.jpg" class="project-img" alt="portfolio img" />
+          <div class="project-info">
+            <h4>Grocery Website</h4>
+            <p>Made with PHP, CSS and JavaScript</p>
+          </div>
+        </article>
+      </a>
+      <!-- end of a project -->
+      <!-- a project -->
+      <a href="https://github.com/Adissuu?tab=repositories" target="_blank" class="project-3">
+        <article class="project">
+          <img src="./visual/images/github.jpg" class="project-img" alt="portfolio img" />
+          <div class="project-info">
+            <h4>My Github</h4>
+            <p>All my personal and academic projects</p>
+          </div>
+        </article>
+      </a>
+      <!-- end of a project -->
+    </div>
+  </section>
+  <!-- end of projects -->
+  <div class="spacer layer2"></div>
+  <!-- skills -->
+  <section class="section skills">
+    <!-- section title -->
+    <div class="section-title">
+      <h2>skills</h2>
+      <div class="underline"></div>
+    </div>
+    <!-- end of section title -->
+    <div class="section-center skills-center">
+      <!-- a skill -->
+      <div class="skill">
+        <p>HTML</p>
+        <div class="skill-container">
+          <div class="skill-value value-70">
+            <p class="skill-text txt-70">
+              70%
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- end of skill -->
+      <!-- a skill -->
+      <div class="skill">
+        <p>CSS</p>
+        <div class="skill-container">
+          <div class="skill-value value-60">
+            <p class="skill-text txt-60">
+              60%
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- end of skill -->
+      <!-- a skill -->
+      <div class="skill">
+        <p>Java</p>
+        <div class="skill-container">
+          <div class="skill-value value-50">
+            <p class="skill-text txt-50">
+              50%
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Java -->
+    </div>
+  </section>
+  <!-- end of skills  -->
+  <!-- contact -->
+  <section class="contact">
+    <video autoplay muted loop class="video-container" poster="./visual/videos/contact-poster.jpg">
+      <source src="./visual/videos/contact.mp4" type="video/mp4" /> Embedded videos are not supported by your browser.
+    </video>
+    <div class="video-banner">
+      <!-- section title -->
+      <div class="section-title">
+        <h2>Let's connect !</h2>
+        <div class="underline"></div>
+      </div>
+      <!-- end section title -->
+      <a href="contact-en.html" class="btn">contact me</a>
+    </div>
+  </section>
+  <!-- end of contact -->
+  <!-- footer -->
+  <footer class="footer">
+    <ul class="social-icons">
+      <li>
+        <a href="https://www.linkedin.com/in/gabriel-dubois-6042b5221/" target="_blank" class="social-icon">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/Adissuu" target="_blank" class="social-icon">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+    </ul>
+    <p>&copy; <span id="date"></span> gabriel dubois. all rights reserved</p>
+    <!-- end of footer -->
+  </footer>
+</body>
+<script src="./js/app.js"></script>
 
 </html>
