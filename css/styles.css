@@ -54,9 +54,10 @@ Global Styles
 ===============
 */
 
-html{
+html {
   scroll-behavior: smooth;
 }
+
 *,
 ::after,
 ::before {
@@ -852,10 +853,16 @@ Skills
   left: 100%;
 }
 
-.skill-icon{
+.skill-icon {
   font-size: 5.5rem;
   color: white;
 }
+
+.skill-icon:hover {
+  color: var(--clr-primary-9);
+  transition: var(--transition);
+}
+
 /*
 =============== 
 Contact
