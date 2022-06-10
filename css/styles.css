@@ -4,6 +4,7 @@ Fonts
 ===============
 */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital@1&family=Imperial+Script&family=Source+Code+Pro:wght@300;500&display=swap');
+
 /*
 =============== 
 Variables
@@ -53,6 +54,9 @@ Global Styles
 ===============
 */
 
+html{
+  scroll-behavior: smooth;
+}
 *,
 ::after,
 ::before {
@@ -848,6 +852,10 @@ Skills
   left: 100%;
 }
 
+.skill-icon{
+  font-size: 5.5rem;
+  color: white;
+}
 /*
 =============== 
 Contact
